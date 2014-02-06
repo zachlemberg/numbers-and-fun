@@ -1,14 +1,3 @@
-def notepad(string):
-	"""opens a string in notepad and then deletes on close"""
-	import os
-	os.chdir("C:\Users\kids")
-	file = open("file.txt","w")
-	file.write(string)
-	file.close()
-	os.system("call notepad file.txt")
-	os.system("del file.txt")
-	print "file was deleted"
-
 def bin_reader(string):
 	"""reads long strings of binary"""
 	def binary(string):
